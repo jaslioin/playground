@@ -1,3 +1,5 @@
 node_modules
 .cache
 gatsby-test/**/public
+examples
+dist
