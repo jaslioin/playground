@@ -23,8 +23,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "contentful": "contentful",
-    "populate:contentful": "contentful space migration --space-id 0ypqr78zxd2e utils/contentful.js --yes"
+    "contentful": "contentful"
   },
   "author": "",
   "license": "ISC"
