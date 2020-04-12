@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const getNavigationLink = slug => `/blog/${slug}`;\nexport const getHref = slug => ({\n  pathname: \"/blog\",\n  query: {\n    post: slug\n  }\n});","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Post from \"./Post\";\nexport default Post;","map":null,"metadata":{},"sourceType":"module"}

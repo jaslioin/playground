@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Post from \"../../components/Post\";\n\nfunction PostPage(_ref) {\n  var post = _ref.post;\n  return __jsx(Post, {\n    contentfulEntry: post.fields\n  });\n}\n\nexport var __N_SSG = true;\nexport default PostPage;","map":null,"metadata":{},"sourceType":"module"}

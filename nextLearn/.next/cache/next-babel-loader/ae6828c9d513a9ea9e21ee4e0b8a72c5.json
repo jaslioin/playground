@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var getNavigationLink = function getNavigationLink(slug) {\n  return \"/blog/\".concat(slug);\n};\nexport var getHref = function getHref(slug) {\n  return {\n    pathname: \"/blog\",\n    query: {\n      post: slug\n    }\n  };\n};","map":null,"metadata":{},"sourceType":"module"}
