@@ -2,7 +2,20 @@ import Card from "../components/Card";
 import Head from "next/head";
 import ContentfulClient from "../cms/contentful";
 import { useEffect } from "react";
-
+import styled from "styled-components";
+import Author from "~/components/Author";
+const Body = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+const PostList = styled.div`
+  flex-basis: 75%;
+`;
+const SideSpace = styled.div`
+  display: flex;
+  flex-basis: 25%;
+  justify-content: flex-end;
+`;
 function HomePage({ posts }) {
   useEffect(() => {
     console.log(posts);
@@ -12,19 +25,30 @@ function HomePage({ posts }) {
       <Head>
         <title>Jasonly' s Blog</title>
       </Head>
-
-      {posts.length > 0
-        ? posts.map((p) => (
-            <Card
-              slug={p.fields.slug}
-              key={p.fields.title}
-              heroImage={p.fields.heroImage.fields.file.url}
-              title={p.fields.title}
-              publishedAt={p.fields.publishDate}
-              description={p.fields.description}
-            />
-          ))
-        : null}
+      <Body>
+        <PostList>
+          {posts.length > 0 &&
+            posts.map((p) => (
+              <Card
+                slug={p.fields.slug}
+                key={p.fields.title}
+                heroImage={p.fields.heroImage.fields.file.url}
+                title={p.fields.title}
+                publishedAt={p.fields.publishDate}
+                description={p.fields.description}
+              />
+            ))}
+        </PostList>
+        <SideSpace>
+          <Author
+            title="Jasonly"
+            description="Me do web"
+            github="http://github.com"
+            linkedin="http://linkedin.com"
+            propic="https://picsum.photos/200/200"
+          />
+        </SideSpace>
+      </Body>
     </>
   );
 }
