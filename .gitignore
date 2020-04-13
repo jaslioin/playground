@@ -3,3 +3,4 @@ node_modules
 gatsby-test/**/public
 examples
 dist
+.next
