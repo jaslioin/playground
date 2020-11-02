@@ -1,5 +1,5 @@
-export const getNavigationLink = (slug) => `/blog/${slug}`;
+export const getNavigationLink = (slug) => `/post/${slug}`;
 export const getHref = (slug) => ({
-  pathname: "/blog",
+  pathname: "/post",
   query: { post: slug },
 });

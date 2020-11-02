@@ -17,6 +17,7 @@ export default function Navbar() {
         <NavItem title="Home" link="/" />
         <NavItem title="About" link="/about" />
         <NavItem title="Blog" link="/blog" />
+        <NavItem title="Project" link="/project" />
       </NavbarContent>
     </NavbarWrapper>
   );
